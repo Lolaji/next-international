@@ -1,0 +1,168 @@
+%pr {
+    position: relative;
+}
+%pa {
+    position: absolute;
+    content : '';
+}
+%flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+//Padding Top and Bottom
+.padding-top {
+    padding-top: 80px;
+}
+.padding-bottom {
+    padding-bottom: 80px;
+}
+@include breakpoint(lg) {
+    .padding-top {
+        padding-top: 110px;
+    }
+    .padding-bottom {
+        padding-bottom: 110px;
+    }
+}
+//Section header
+.section-header {
+    max-width: 730px;
+    margin: 0 auto 40px;
+    margin-top: -7px;
+    text-align: center;
+    z-index: 9;
+    position: relative;
+    text-transform: capitalize;
+    @include breakpoint(sm) {
+        margin: 0 auto 63px;
+    }
+    .title {
+        margin-bottom: 20px;
+        margin-top: -11px;
+    }
+    .shape {
+        background: $primary-color;
+        margin: 0 auto 19px;
+        .shape-inner::after,
+        .shape-inner::before,
+        &::before,
+        &::after {
+            background: $theme-color;
+        }
+    }
+    p {
+        margin-bottom: 0;
+        @include breakpoint(sm) {
+            font-size: 18px;
+        }
+    }
+}
+.shape {
+    display: inline-block;
+    width: 27px;
+    height: 3px;
+    background: $theme-color;
+    margin-left: 10px;
+    @extend %pr;
+    .shape-inner::after,
+    .shape-inner::before,
+    &::before,
+    &::after {
+        @extend %pa;
+        width: 3px;
+        height: 3px;
+        background: $primary-color;
+        top: 0;
+    }
+    .shape-inner::after {
+        left: calc(100% + 2px);
+    }
+    .shape-inner::before {
+        left: calc(100% + 7px);
+    }
+    &::after {
+        right: calc(100% + 2px);
+    }
+    &::before {
+        right: calc(100% + 7px);
+    }
+}
+//reset margin
+.mb-30-none {
+    margin-bottom: -30px;
+}
+.mb-40-none {
+    margin-bottom: -40px;
+}
+//Social Icons Of Footer
+.social-icons {
+    margin: -5px;
+    margin-bottom: 0;
+    a {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        @include border-radius(50%);
+        margin: 5px;
+        border: 1px solid #777777;
+        color: #777777;
+        &:hover {
+            color: $white-color;
+            background-color: #363636;
+        }
+    }
+}
+//Preloader
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999;
+}
+.preloader .preloader-wrapper {
+    text-align: center;
+}
+
+/*Alignments*/
+.project-details .tour-details-item .tour-details-thumb {
+    margin-bottom: 25px;
+    @include breakpoint(lg) {
+        margin-bottom: 27px;
+    }
+}
+.project-details .tour-details-item.list-style p {
+    &.title-content {
+        margin-bottom: 25px;
+        @include breakpoint(lg) {
+            margin-bottom: 32px;
+        }
+    }
+    &.title-content-two {
+        margin-bottom: 15px;
+        @include breakpoint(lg) {
+            margin-bottom: 32px;
+        }
+    }
+}
+.service-details {
+    article {
+        @include breakpoint(max-lg) {
+            margin-bottom: 72px;
+        }
+    }
+}
+.project-details {
+    article {
+        @include breakpoint(max-lg) {
+            margin-bottom: 80px;
+        }
+    }
+}

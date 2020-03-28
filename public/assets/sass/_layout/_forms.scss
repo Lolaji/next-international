@@ -1,0 +1,27 @@
+//Faq Form
+.faq-form {
+    textarea,
+    input {
+        height: 45px;
+        padding: 15px 20px;
+        background: #f7f8fa;
+        margin-bottom: 30px;
+        border: 1px solid #e5e5e5;
+        &[type="submit"] {
+            padding: 0 30px;
+            color: $title-color;
+            font-weight: 700;
+            background-color: $theme-color;
+            width: auto;
+            @include transition($transition);
+            height: 50px;
+            &:hover {
+                background-color: #b37400;
+            }
+        }
+    }
+    textarea {
+        height: 100px;
+        display: inherit;
+    }
+}

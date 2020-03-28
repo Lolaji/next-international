@@ -1,0 +1,82 @@
+$bootstrap-sass-asset-helper: false !default;
+
+// Variables
+// Colors
+
+$title-color: #333333;
+$title-two: #211f2f;
+$theme-color: #fbba42;
+// $theme-color-two: #ff5110;
+$body-color :#777777;
+$primary-color: #3b55e6;
+$border-color: #e1e1e1;
+// $grey-color: #696969;
+// $ash-color: #f7fbff;
+$white-color: #ffffff;
+// $ash-linear: linear-gradient(to bottom, #fbfcff, #feffff);
+// $theme-color-two: #ff4600;
+
+
+
+
+
+// social-media icons color
+$whatsapp: #25d366;
+$facebook: #3b5998;
+$twitter: #55acee;
+$linkedin: #007bb5;
+$pinterest: #007bb5;
+$skype: #2fb7df;
+$youtube: #cd201f;
+$google: #dd4b39;
+$camera: #e4405f;
+$instagram: #e4405f;
+$tumblr: #34465d;
+$behance: #1769ff;
+$star: #e9ba17;
+$green: #0be881;
+$green-h: #0fbcf9;
+$red: #f53b57;
+$yellow: #dec32b;
+$nell: #212fb4;
+$navy: #d8e0f3;
+$plaseholder: #a1a1a2;
+$name-dec: #3f485d;
+$futbol : #db3776;
+$vimeo : #1ab7ea;
+//== Typography
+
+// font-family
+$font-family-Alegreya: 'Alegreya', serif;
+$font-family-Opensans: 'Open Sans', sans-serif;
+
+
+
+// font-size
+$fs-base: 1rem !default; //16px;
+$fs-large: 1.125rem; //18px
+$fs-small: 0.875rem; //14px
+$fs-h1: 3.4375rem; //55px;
+$fs-h2: 2.25rem; //36px;	
+$fs-h3: 1.875rem; //30px;		
+$fs-h4: 1.5rem; //24px;		
+$fs-h5: 1.375rem; //22px;		
+$fs-h6: 1.125rem; //18px;	
+
+
+
+
+// heading line height
+$lh-h1: 3.125rem; //50px;
+$lh-h2: 3rem; //48px;
+$lh-h3: 2.8125rem; //45px;
+$lh-h4: 1.875rem; //30px;
+$lh-h5: 1.75rem; //26px;
+$lh-h6: 1.5rem; //24px;
+
+
+ //Description line height
+ $lh-p: 1.6875rem; //27px;
+
+ //  transition
+$transition: all ease 0.3s;

@@ -1,0 +1,86 @@
+.r-slider-label{
+position: absolute;
+  line-height: 0;
+  text-align:center;
+  width:4px;
+  height:4px;  
+}
+.r-slider-label div{
+  width:200px;
+  position:relative;
+  left:-100px;
+}
+.r-slider-space{
+  position:absolute;
+  z-index:100;
+  overflow: hidden;
+  cursor:pointer;
+}
+
+.r-slider-container.horizontal .r-slider-space{
+  top:0;
+  height:100%;
+}
+.r-slider-container.vertical .r-slider-space{
+  left:0;
+  width:100%;
+}
+
+.r-slider-text{
+  position:absolute;
+  text-align:center;
+  z-index:10;
+}
+
+.r-slider-fill{
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+.r-slider-container.horizontal .r-slider-fill{
+  width:100%;
+}
+.r-slider-container.vertical .r-slider-fill{
+  height:100%;
+}
+.r-slider-button{
+  border:none;
+  position:absolute;
+  z-index: 1000;
+  cursor:pointer;
+}
+
+.r-slider-container.horizontal .r-slider-button{
+  top:0;
+}
+
+.r-slider-container.vertical .r-slider-button{
+  left:0;
+}
+
+.r-slider-line{
+  position:absolute;
+  z-index:1;
+}
+
+.r-slider-container.horizontal .r-slider-line{
+  width:100%;
+}
+
+.r-slider-container.vertical .r-slider-line{
+  height:100%;
+}
+
+.r-slider-container.horizontal .r-slider-pin{
+  position:absolute;
+  width:1px;
+  height:100%;
+  top:0;
+}
+
+.r-slider-container.vertical .r-slider-pin{
+  position:absolute;
+  width:100%;
+  height:1px;
+  left:0;
+}
